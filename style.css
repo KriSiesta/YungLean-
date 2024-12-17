@@ -8,68 +8,87 @@
 /* Основные стили для страницы */
 body {
     font-family: Arial, sans-serif;
-    background-color: #e0f7fa;
+    background-color: #f0f8ff;  /* Цвет фона страницы */
     color: #333;
     line-height: 1.6;
-}
-
-/* Контейнер для всего контента */
-.container {
-    width: 80%;
-    margin: 0 auto;
     padding: 20px;
 }
 
-/* Контейнер для изображений */
-.image-container {
-    text-align: center;
+/* Стиль для текста заголовков и абзацев */
+h1, h2 {
+    font-size: 2em;
     margin-bottom: 20px;
 }
 
-/* Стили для изображений */
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Стили для текста */
+p {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Стили для списка */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    text-align: center;
+}
+
+ul li {
+    font-size: 1.2em;
+    margin: 5px 0;
+}
+
+/* Стиль для первого изображения */
 img {
-    max-width: 100%; /* Ограничиваем ширину */
+    max-width: 100%;
     height: auto;
     display: block;
     margin: 0 auto;
 }
 
-/* Стили для второго изображения (ограничение по размеру) */
-.image-container img:last-child {
-    max-width: 90%; /* Ограничиваем размер второго изображения */
+/* Контейнер для второго фото и текста */
+div[style="display: flex; justify-content: left; align-items: center; margin-top: 20px;"] {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     margin-top: 20px;
 }
 
-/* Контейнер с текстовым контентом */
-.text-content {
-    margin-bottom: 20px;
+/* Стиль для второго фото */
+div[style="display: flex; justify-content: left; align-items: center; margin-top: 20px;"] img {
+    width: 300px;
+    margin-right: 20px;
 }
 
-/* Стили для заголовков и текста */
-h2 {
-    text-align: center;
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-p {
+/* Стиль для текста рядом с фотографией */
+div[style="display: flex; justify-content: left; align-items: center; margin-top: 20px;"] div {
     font-size: 1.2em;
-    margin-bottom: 10px;
+    text-align: left;
 }
 
-/* Стили для списка */
-ul {
-    list-style: none;
-    padding-left: 0;
+/* Дополнительный блок с треками */
+div[style="text-align: left; margin-top: 20px; margin-left: 20px;"] {
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 20px;
 }
 
-ul li {
+div[style="text-align: left; margin-top: 20px; margin-left: 20px;"] ul {
+    padding-left: 20px;
+}
+
+div[style="text-align: left; margin-top: 20px; margin-left: 20px;"] ul li {
+    font-size: 1.2em;
     margin: 5px 0;
-}
-
-/* Стили для текста о выступлении */
-.performance-text {
-    font-size: 1.1em;
-    margin: 10px 0;
-    text-align: center;
 }
