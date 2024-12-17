@@ -6,23 +6,16 @@ body {
     background-color: #f4f4f4;
 }
 
-/* Стили для списка с точками */
-.dotted-list {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-.dotted-list li {
-    position: relative;
+/* Стили для списка */
+ul {
     padding-left: 20px;
+    text-align: left; /* Выравниваем текст слева */
 }
 
-.dotted-list li::before {
-    content: '•'; /* Символ точки */
-    position: absolute;
-    left: 0;
-    top: 0;
-    font-weight: bold;
+/* Стили для списка */
+li {
+    font-size: 18px;
+    line-height: 1.5;
 }
 
 /* Стили для изображения */
