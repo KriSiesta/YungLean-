@@ -1,66 +1,63 @@
-body {
+/* Стили для контейнера */
+.container {
+    width: 80%;
+    margin: 0 auto;
     font-family: Arial, sans-serif;
-    background-color: #e0ffff; /* Светло-голубой фон */
-    color: #5c2a2a; /* Темно-красный текст */
-    margin: 0;
-    padding: 0;
+    background-color: #e6f7ff;
+    padding: 20px;
+    border-radius: 10px;
 }
 
-h1 {
-    color: brown;
-    font-size: 2.5em;
+/* Заголовки */
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* Стили для изображений */
+.images {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
     margin-top: 20px;
-    text-align: center;
 }
 
-h2 {
-    color: darkred;
-    margin-top: 40px;
-    text-align: center;
+.first-image {
+    max-width: 300px;
+    border-radius: 10px;
 }
 
-p, ul {
-    line-height: 1.8;
-    margin: 10px 20px;
-    font-size: 1.2em;
+img {
+    max-width: 400px;
+    border-radius: 10px;
 }
 
-.album-section {
-    text-align: center; /* Центрирование блока с дискографией */
-    margin: 20px auto;
-    max-width: 900px; /* Ограничение ширины для текста */
-}
-
-img.center-image {
-    width: 400px; /* Увеличенные изображения */
-    height: auto;
-    border: 3px solid brown;
-    display: block;
-    margin: 20px auto; /* Центрирование изображения */
-}
-
-img.left-image {
-    width: 400px;
-    height: auto;
-    border: 3px solid brown;
-    margin-left: 20px; /* Смещение второй фотографии влево */
-    display: inline-block;
-}
-
-.inline-text {
-    display: inline-block;
-    margin-left: 20px;
-    vertical-align: top;
-    font-size: 1.2em;
+/* Стили для текста под изображениями */
+.performance-text {
     text-align: left;
+    margin-top: 20px;
+    font-style: italic;
+    font-size: 16px;
+    color: #333;
 }
 
-.left-text {
+/* Стили для списка */
+ul {
+    list-style-position: inside;
+    padding-left: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+ul li {
+    margin-left: 0;
+}
+
+/* Стили для параграфа */
+p {
     text-align: left;
-    margin-left: 20px;
-}
-
-.highlight {
-    font-weight: bold;
-    color: darkred;
+    color: #333;
+    font-size: 16px;
 }
