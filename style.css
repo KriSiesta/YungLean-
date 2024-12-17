@@ -15,16 +15,15 @@ body {
 
 .dotted-list li {
     position: relative;
+    padding-left: 25px; /* Создаем отступ для точек */
     font-size: 18px;
     line-height: 1.5;
-    display: inline-block;
-    margin-right: 20px; /* Отступ между пунктами */
 }
 
 .dotted-list li::before {
     content: '•'; /* Символ точки */
     position: absolute;
-    left: -25px; /* Сдвигаем точку в упор к тексту */
+    left: 0;
     top: 0;
     font-weight: bold;
     font-size: 18px;
