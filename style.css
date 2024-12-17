@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0ffff; /* Светло-голубой фон */
+    color: #5c2a2a; /* Темно-красный текст */
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: brown;
+    font-size: 2.5em;
+    margin-top: 20px;
+    text-align: center;
+}
+
+h2 {
+    color: darkred;
+    margin-top: 40px;
+    text-align: center;
+}
+
+p, ul {
+    line-height: 1.8;
+    margin: 10px 20px;
+    font-size: 1.2em;
+}
+
+.album-section {
+    text-align: center; /* Центрирование блока с дискографией */
+    margin: 20px auto;
+    max-width: 900px; /* Ограничение ширины для текста */
+}
+
+img.center-image {
+    width: 400px; /* Увеличенные изображения */
+    height: auto;
+    border: 3px solid brown;
+    display: block;
+    margin: 20px auto; /* Центрирование изображения */
+}
+
+img.left-image {
+    width: 400px;
+    height: auto;
+    border: 3px solid brown;
+    margin-left: 20px; /* Смещение второй фотографии влево */
+    display: inline-block;
+}
+
+.inline-text {
+    display: inline-block;
+    margin-left: 20px;
+    vertical-align: top;
+    font-size: 1.2em;
+    text-align: left;
+}
+
+.left-text {
+    text-align: left;
+    margin-left: 20px;
+}
+
+.highlight {
+    font-weight: bold;
+    color: darkred;
+}
