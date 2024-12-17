@@ -8,16 +8,13 @@ body {
 
 /* Стили для списка с точками */
 .dotted-list {
-    list-style-type: none; /* Убираем стандартные маркеры */
+    list-style-type: none;
     padding-left: 0;
-    text-align: center; /* Центрируем весь список */
 }
 
 .dotted-list li {
     position: relative;
-    padding-left: 25px; /* Создаем отступ для точек */
-    font-size: 18px;
-    line-height: 1.5;
+    padding-left: 20px;
 }
 
 .dotted-list li::before {
@@ -26,8 +23,6 @@ body {
     left: 0;
     top: 0;
     font-weight: bold;
-    font-size: 18px;
-    color: black; /* Цвет точки */
 }
 
 /* Стили для изображения */
