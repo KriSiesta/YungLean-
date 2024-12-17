@@ -1,104 +1,54 @@
-/* Сброс стилей по умолчанию */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Основные стили для страницы */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f8ff;  /* Цвет фона страницы */
-    color: #333;
     line-height: 1.6;
-    padding: 20px;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
 }
 
-/* Стиль для текста заголовков и абзацев */
 h1, h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
+    color: #333;
 }
 
 h1 {
-    text-align: center;
-    font-size: 2.5em;
+    font-size: 2.5rem;
+    margin-top: 20px;
 }
 
 h2 {
-    text-align: left;
-    margin-bottom: 15px;
+    font-size: 2rem;
+    margin-top: 30px;
 }
 
-/* Стили для текста */
 p {
-    font-size: 1.2em;
-    margin-bottom: 15px;
-    text-align: left;
+    font-size: 1.1rem;
+    color: #555;
+    margin: 10px 0;
 }
 
-/* Стили для списка */
 ul {
-    list-style-type: none;
-    padding-left: 0;
-    text-align: left;
+    padding-left: 20px;
+    font-size: 1rem;
 }
 
-ul li {
-    font-size: 1.2em;
+li {
     margin: 5px 0;
-    position: relative;
+    color: #333;
 }
 
-/* Добавляем точки после пунктов списка */
 ul li:after {
-    content: " •";
-    position: absolute;
-    right: -15px;
-    top: 0;
+    content: ' •';  /* добавление точек после элементов списка */
 }
 
-/* Стиль для первого изображения */
 img {
+    width: 100%;
     max-width: 100%;
     height: auto;
-    display: block;
-    margin: 0 auto;
 }
 
-/* Контейнер для второго фото и текста */
-div[style="display: flex; justify-content: left; align-items: center; margin-top: 20px; margin-left: 20px;"] {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin-top: 20px;
-    margin-left: 20px;
-}
-
-/* Стиль для второго фото */
-div[style="display: flex; justify-content: left; align-items: center; margin-top: 20px; margin-left: 20px;"] img {
-    width: 300px;
-    margin-right: 20px;
-}
-
-/* Стиль для текста рядом с фотографией */
-div[style="display: flex; justify-content: left; align-items: center; margin-top: 20px; margin-left: 20px;"] div {
-    font-size: 1.2em;
-    text-align: left;
-}
-
-/* Дополнительный блок с треками */
-div[style="text-align: left; margin-top: 20px; margin-left: 20px;"] {
-    text-align: left;
-    margin-top: 20px;
-    margin-left: 20px;
-}
-
-div[style="text-align: left; margin-top: 20px; margin-left: 20px;"] ul {
-    padding-left: 20px;
-}
-
-div[style="text-align: left; margin-top: 20px; margin-left: 20px;"] ul li {
-    font-size: 1.2em;
-    margin: 5px 0;
+@media (min-width: 768px) {
+    .container {
+        width: 80%;
+        margin: auto;
+    }
 }
