@@ -1,113 +1,55 @@
-/* Основной стиль */
+/* Общие стили */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4;
 }
 
-/* Заголовок и изображения */
-h1 {
-    font-size: 2.5rem;
-    margin-top: 20px;
-    text-align: center;
-}
-
-h2 {
-    font-size: 2rem;
-    margin-top: 30px;
-    text-align: center;
-}
-
-p {
-    font-size: 1.1rem;
-    color: #555;
-    margin: 10px 0;
-}
-
-/* Контейнер для фото и заголовка */
-.header-container {
-    text-align: center;
-}
-
-.header-container img {
-    max-width: 100%;
-    height: auto;
-    margin-top: 10px;
-}
-
-/* Контейнер для текста */
-.text-container {
-    text-align: left;
-    margin-top: 20px;
-    margin-left: 20px;
-}
-
-/* Дискография по центру */
-.discography {
-    text-align: center;
-    margin-top: 30px;
-}
-
-.discography p {
-    font-size: 1.2rem;
-}
-
-/* Список с точками */
-ul.dot-list {
-    padding-left: 0;
-    font-size: 1rem;
+/* Стили для списка с точками */
+.dotted-list {
     list-style-type: none;
-    text-align: center;
+    padding-left: 0;
 }
 
-ul.dot-list li {
-    margin: 5px 0;
-    color: #333;
+.dotted-list li {
     position: relative;
-    padding-left: 25px;
+    padding-left: 20px;
 }
 
-ul.dot-list li:before {
-    content: '•';
-    font-size: 1.5rem;
-    font-weight: bold;
+.dotted-list li::before {
+    content: '•'; /* Символ точки */
     position: absolute;
     left: 0;
     top: 0;
+    font-weight: bold;
+}
+
+/* Стили для изображения */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Стили для текста под фото */
+p {
+    font-size: 16px;
+    line-height: 1.5;
     color: #333;
 }
 
-/* Контейнер для второго фото и текста */
-.performance-container {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+/* Стили для выравнивания по центру */
+h1, h2, p {
+    text-align: center;
+}
+
+/* Стили для второго фото с текстом */
+div {
     margin-top: 20px;
-    margin-left: 20px;
 }
 
-.performance-container img {
-    width: 300px;
-    margin-right: 20px;
-}
-
-.performance-text {
-    width: 50%;
-}
-
-/* Треклист с точками */
-.tracklist-container {
-    text-align: left;
-    margin-top: 20px;
-    margin-left: 20px;
-}
-
-/* Адаптивность */
-@media (min-width: 768px) {
-    .container {
-        width: 80%;
-        margin: auto;
-    }
+/* Стили для текста под фото */
+strong {
+    font-weight: bold;
 }
