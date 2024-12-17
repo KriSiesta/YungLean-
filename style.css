@@ -4,10 +4,15 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    text-align: center; /* Выравнивание всего контента по центру */
+    text-align: center; /* Выравнивание заголовков по центру */
 }
 
-/* Стили для выравнивания по центру */
+/* Стили для заголовка */
+h1 {
+    text-align: center;
+}
+
+/* Стили для выравнивания изображения по центру */
 .centered {
     text-align: center;
 }
@@ -18,24 +23,15 @@ img {
     max-width: 100%;
     height: auto;
     margin-left: auto;
-    margin-right: auto; /* Центрируем изображения */
+    margin-right: auto; /* Центрируем изображение */
 }
 
-/* Стили для текста под фото */
-p {
-    font-size: 16px;
-    line-height: 1.5;
-    color: #333;
-}
-
-/* Стили для второго фото с текстом */
-div {
-    margin-top: 20px;
-}
-
-/* Стили для текста под фото */
-strong {
-    font-weight: bold;
+/* Стили для текста, который будет выровнен влево и увеличен */
+.left-text {
+    text-align: left;
+    font-size: 18px; /* Увеличен размер шрифта */
+    margin-left: 20px; /* Отступ слева */
+    margin-right: 20px; /* Отступ справа для удобства */
 }
 
 /* Стили для списка */
