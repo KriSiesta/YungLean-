@@ -26,7 +26,7 @@ h1 {
 }
 
 h2 {
-    text-align: center;
+    text-align: left;
     margin-bottom: 15px;
 }
 
@@ -34,19 +34,28 @@ h2 {
 p {
     font-size: 1.2em;
     margin-bottom: 15px;
-    text-align: center;
+    text-align: left;
 }
 
 /* Стили для списка */
 ul {
     list-style-type: none;
     padding-left: 0;
-    text-align: center;
+    text-align: left;
 }
 
 ul li {
     font-size: 1.2em;
     margin: 5px 0;
+    position: relative;
+}
+
+/* Добавляем точки после пунктов списка */
+ul li:after {
+    content: " •";
+    position: absolute;
+    right: -15px;
+    top: 0;
 }
 
 /* Стиль для первого изображения */
@@ -58,21 +67,22 @@ img {
 }
 
 /* Контейнер для второго фото и текста */
-div[style="display: flex; justify-content: left; align-items: center; margin-top: 20px;"] {
+div[style="display: flex; justify-content: left; align-items: center; margin-top: 20px; margin-left: 20px;"] {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     margin-top: 20px;
+    margin-left: 20px;
 }
 
 /* Стиль для второго фото */
-div[style="display: flex; justify-content: left; align-items: center; margin-top: 20px;"] img {
+div[style="display: flex; justify-content: left; align-items: center; margin-top: 20px; margin-left: 20px;"] img {
     width: 300px;
     margin-right: 20px;
 }
 
 /* Стиль для текста рядом с фотографией */
-div[style="display: flex; justify-content: left; align-items: center; margin-top: 20px;"] div {
+div[style="display: flex; justify-content: left; align-items: center; margin-top: 20px; margin-left: 20px;"] div {
     font-size: 1.2em;
     text-align: left;
 }
