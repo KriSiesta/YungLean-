@@ -4,6 +4,38 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    text-align: center; /* Выравнивание всего контента по центру */
+}
+
+/* Стили для выравнивания по центру */
+.centered {
+    text-align: center;
+}
+
+/* Стили для изображения */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto; /* Центрируем изображения */
+}
+
+/* Стили для текста под фото */
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+/* Стили для второго фото с текстом */
+div {
+    margin-top: 20px;
+}
+
+/* Стили для текста под фото */
+strong {
+    font-weight: bold;
 }
 
 /* Стили для списка */
@@ -16,33 +48,4 @@ ul {
 li {
     font-size: 18px;
     line-height: 1.5;
-}
-
-/* Стили для изображения */
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-
-/* Стили для текста под фото */
-p {
-    font-size: 16px;
-    line-height: 1.5;
-    color: #333;
-}
-
-/* Стили для выравнивания по центру */
-h1, h2, p {
-    text-align: center;
-}
-
-/* Стили для второго фото с текстом */
-div {
-    margin-top: 20px;
-}
-
-/* Стили для текста под фото */
-strong {
-    font-weight: bold;
 }
