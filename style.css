@@ -8,8 +8,8 @@ body {
 
 /* Стили для списка */
 ul {
-    padding-left: 20px;
-    text-align: left; /* Выравниваем текст слева */
+    padding-left: 0;
+    text-align: center; /* Центрируем весь список */
 }
 
 /* Стили для списка */
