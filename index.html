@@ -4,122 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yung Lean</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #e0ffff; /* Светло-голубой фон */
-            color: #5c2a2a; /* Темно-красный текст */
-            margin: 0;
-            padding: 0;
-        }
-
-        h1 {
-            color: brown;
-            font-size: 2.5em;
-            margin-top: 20px;
-            text-align: center;
-        }
-
-        h2 {
-            color: darkred;
-            margin-top: 40px;
-            text-align: center;
-        }
-
-        p, ul {
-            line-height: 1.8;
-            margin: 10px 20px;
-            font-size: 1.2em;
-        }
-
-        .album-section {
-            text-align: center; /* Центрирование блока с дискографией */
-            margin: 20px auto;
-            max-width: 900px; /* Ограничение ширины для текста */
-        }
-
-        img.center-image {
-            width: 400px; /* Увеличенные изображения */
-            height: auto;
-            border: 3px solid brown;
-            display: block;
-            margin: 20px auto; /* Центрирование изображения */
-        }
-
-        img.left-image {
-            width: 400px;
-            height: auto;
-            border: 3px solid brown;
-            margin-left: 20px; /* Смещение второй фотографии влево */
-            display: inline-block;
-        }
-
-        .inline-text {
-            display: inline-block;
-            margin-left: 20px;
-            vertical-align: top;
-            font-size: 1.2em;
-            text-align: left;
-        }
-
-        .left-text {
-            text-align: left;
-            margin-left: 20px;
-        }
-
-        .highlight {
-            font-weight: bold;
-            color: darkred;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Yung Lean</h1>
-    <!-- Центрирование первого изображения -->
-    <img class="center-image" src="https://i.pinimg.com/736x/d2/9d/67/d29d67fb5dde058255b176ec511ea5b6.jpg" alt="Фото Yung Lean">
-
-    <!-- Текст до дискографии -->
-    <p class="left-text"><i>Yung Lean</i> (настоящее имя — Jonathan Aron Leandoer Håstad) — шведский рэпер. Родился <span class="highlight">18 июля 1996</span> года в Минске. Несмотря на то, что он родился в Швеции, свое детство он провел в Беларуси. В 5 лет он вернулся в Швецию, а уже в 11 лет записал свою первую песню под другим псевдонимом.</p>
-    <p class="left-text">Вместе со своим приятелем они создали музыкальное объединение <i>sad boys</i>. Популярность пришла в 2013 году благодаря треку: <a href="https://youtu.be/XAIIy-eXplw" target="_blank">Ginseng Strip 2002</a>.</p>
-
-    <!-- Дискография -->
-    <h2>Дискография</h2>
-    <div class="album-section">
-        <p><b>Альбомы:</b></p>
-        <p>
-            - Unknown Memory (2014);<br>
-            - Warlord (2016);<br>
-            - Stranger (2017);<br>
-            - Starz (2020).
-        </p>
-        <p><b>Мини-альбомы:</b></p>
-        <p>
-            - Lavender (2013);<br>
-            - Crash Bandicoot & Ghostface / Shyguy (2013);<br>
-            - Total Eclipse (2019).
-        </p>
-        <p><b>Микстейпы:</b></p>
-        <p>
-            - Unknown Death 2002 (2013);<br>
-            - Frost God (2016);<br>
-            - Poison Ivy (2018);<br>
-            - Stardust (2022).
-        </p>
+    <!-- Первое фото по центру -->
+    <div style="text-align: center;">
+        <img src="images/photo1.jpg" alt="Фото Yung Lean" style="max-width: 100%; height: auto;">
     </div>
 
-    <!-- Вторая фотография и описание -->
-    <div style="display: flex; align-items: center;">
-        <img class="left-image" src="https://go.zvuk.com/imgs/2022/08/30/08/5563097/e7e8bddbfdfe14e880eea5b3b8e49290a7c2fe6b.jpg" alt="Выступление Yung Lean">
-        <p class="inline-text">Выступление Yung Lean на фестивале Osheaga Music And Art Festival, 5 августа 2017 года.</p>
+    <h1 style="text-align: center;">Yung Lean</h1>
+    <p style="text-align: center;">Yung Lean (настоящее имя — Jonathan Aron Leandoer Håstad) — шведский рэпер. Родился 18 июля 1996 года в Мальмё.</p>
+    <p style="text-align: center;">Несмотря на то, что он родился в Швеции, своё детство он провел в Беларуси. В 5 лет он вернулся в Швецию, а в 2013 году подписал контракт с лейблом Sad Boys.</p>
+
+    <!-- Раздел "Дискография" по центру -->
+    <div style="text-align: center;">
+        <h2>Дискография</h2>
+        <p><strong>Альбомы:</strong></p>
+        <ul>
+            <li>Unknown Memory (2014)</li>
+            <li>Warlord (2016)</li>
+            <li>Stranger (2017)</li>
+            <li>Starz (2020)</li>
+        </ul>
+
+        <p><strong>Мини-альбомы:</strong></p>
+        <ul>
+            <li>Lavender (2013)</li>
+            <li>Crash Bandicoot & Ghostface / Shyguy (2013)</li>
+            <li>Total Eclipse (2019)</li>
+        </ul>
+
+        <p><strong>Микстейпы:</strong></p>
+        <ul>
+            <li>Unknown Death 2002 (2013)</li>
+            <li>Frost God (2016)</li>
+            <li>Poison Ivy (2018)</li>
+            <li>Stardust (2022)</li>
+        </ul>
     </div>
 
-    <!-- Список треков -->
-    <p class="left-text" style="margin-top: 0;"><b>Одни из самых ярких треков на мой взгляд:</b></p>
-    <ul class="left-text">
-        <li>Kyoto</li>
-        <li>Diamonds (feat Thaiboi Digital)</li>
-        <li>Yoshi City</li>
-        <li>Red Bottom Sky</li>
-    </ul>
+    <!-- Второе фото с текстом рядом (слева) -->
+    <div style="display: flex; justify-content: left; align-items: center; margin-top: 20px;">
+        <img src="https://raw.githubusercontent.com/KriSiesta/YungLean-/main/images/photo2.jpg" alt="Фото выступления" style="width: 300px; margin-right: 20px;">
+        <div>
+            <p>Выступление Yung Lean на фестивале Osheaga Music And Art Festival, 5 августа 2017 года.</p>
+        </div>
+    </div>
+
+    <!-- Дополнительный текст под вторым фото -->
+    <div style="text-align: left; margin-top: 20px; margin-left: 20px;">
+        <p><strong>Одни из самых ярких треков на мой взгляд:</strong></p>
+        <ul>
+            <li>Kyoto</li>
+            <li>Diamonds (feat Thaiboi Digital)</li>
+            <li>Yoshi City</li>
+            <li>Red Bottom Sky</li>
+        </ul>
+    </div>
 </body>
 </html>
