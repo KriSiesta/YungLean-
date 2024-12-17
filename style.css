@@ -26,18 +26,27 @@ p {
     margin: 10px 0;
 }
 
-ul {
-    padding-left: 20px;
+ul.dot-list {
+    padding-left: 0;
     font-size: 1rem;
+    list-style-type: none;
 }
 
-li {
+ul.dot-list li {
     margin: 5px 0;
     color: #333;
+    position: relative;
+    padding-left: 25px;
 }
 
-ul li:after {
-    content: ' •';  /* добавление точек после элементов списка */
+ul.dot-list li:before {
+    content: '•';
+    font-size: 2rem;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #333;
 }
 
 img {
