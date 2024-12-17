@@ -1,3 +1,4 @@
+/* Основной стиль */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -6,10 +7,7 @@ body {
     padding: 0;
 }
 
-h1, h2 {
-    color: #333;
-}
-
+/* Заголовок и изображения */
 h1 {
     font-size: 2.5rem;
     margin-top: 20px;
@@ -28,12 +26,35 @@ p {
     margin: 10px 0;
 }
 
+/* Контейнер для фото и заголовка */
+.header-container {
+    text-align: center;
+}
+
+.header-container img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+/* Контейнер для текста */
 .text-container {
     text-align: left;
     margin-top: 20px;
     margin-left: 20px;
 }
 
+/* Дискография по центру */
+.discography {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.discography p {
+    font-size: 1.2rem;
+}
+
+/* Список с точками */
 ul.dot-list {
     padding-left: 0;
     font-size: 1rem;
@@ -50,7 +71,7 @@ ul.dot-list li {
 
 ul.dot-list li:before {
     content: '•';
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
     position: absolute;
     left: 0;
@@ -58,26 +79,7 @@ ul.dot-list li:before {
     color: #333;
 }
 
-header {
-    text-align: center;
-}
-
-img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-}
-
-.header-container {
-    text-align: center;
-}
-
-.header-container img {
-    max-width: 100%;
-    height: auto;
-    margin-top: 10px;
-}
-
+/* Контейнер для второго фото и текста */
 .performance-container {
     display: flex;
     justify-content: flex-start;
@@ -95,13 +97,14 @@ img {
     width: 50%;
 }
 
+/* Треклист с точками */
 .tracklist-container {
     text-align: left;
     margin-top: 20px;
     margin-left: 20px;
 }
 
-/* Для более широких экранов */
+/* Адаптивность */
 @media (min-width: 768px) {
     .container {
         width: 80%;
