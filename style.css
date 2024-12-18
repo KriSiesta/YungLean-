@@ -39,25 +39,18 @@ img {
 /* Стили для списка */
 ul {
     padding-left: 0;
-    text-align: left; /* Сдвигаем список влево */
-    margin-left: 30px; /* Отступ слева для точек */
-}
-
-/* Стили для списка */
-li {
-    font-size: 18px;
-    line-height: 1.5;
 }
 
 /* Стили для списка с точками */
 .dotted-list {
     list-style-type: none; /* Убираем стандартные маркеры */
     padding-left: 0;
+    text-align: left; /* Точки с левого края */
 }
 
 .dotted-list li {
     position: relative;
-    padding-left: 25px; /* Отступ для точек */
+    padding-left: 25px; /* Создаем отступ для точек */
     font-size: 18px;
     line-height: 1.5;
 }
@@ -72,21 +65,21 @@ li {
     color: black; /* Цвет точки */
 }
 
-/* Стили для второго фото с текстом */
+/* Стили для второго фото с текстом рядом, выравнивание слева */
 .second-photo {
     display: flex;
-    justify-content: flex-start; /* Выравниваем влево */
+    justify-content: left;
     align-items: center;
     margin-top: 20px;
-    margin-left: 20px; /* Немного отступаем от края */
 }
 
+.second-photo .photo-text {
+    margin-right: 20px;
+    text-align: left;
+}
+
+/* Стили для изображения */
 .second-photo img {
     width: 300px;
-    margin-right: 20px;
-}
-
-/* Стили для текста под фото */
-strong {
-    font-weight: bold;
+    margin-left: 20px;
 }
