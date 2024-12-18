@@ -10,6 +10,8 @@ body {
 /* Стили для заголовка */
 h1 {
     text-align: center;
+    font-size: 36px; /* Увеличенный размер для заголовка */
+    margin-top: 20px; /* Отступ сверху */
 }
 
 /* Стили для выравнивания изображения по центру */
@@ -32,6 +34,7 @@ img {
     font-size: 18px; /* Увеличен размер шрифта */
     margin-left: 20px; /* Отступ слева */
     margin-right: 20px; /* Отступ справа для удобства */
+    line-height: 1.6; /* Межстрочный интервал */
 }
 
 /* Стили для списка */
@@ -44,4 +47,38 @@ ul {
 li {
     font-size: 18px;
     line-height: 1.5;
+}
+
+/* Стили для списка с точками */
+.dotted-list {
+    list-style-type: none; /* Убираем стандартные маркеры */
+    padding-left: 0;
+    text-align: center; /* Центрируем весь список */
+}
+
+.dotted-list li {
+    position: relative;
+    padding-left: 25px; /* Отступ для точек */
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.dotted-list li::before {
+    content: '•'; /* Символ точки */
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-weight: bold;
+    font-size: 18px;
+    color: black; /* Цвет точки */
+}
+
+/* Стили для второго фото с текстом */
+div {
+    margin-top: 20px;
+}
+
+/* Стили для текста под фото */
+strong {
+    font-weight: bold;
 }
