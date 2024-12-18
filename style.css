@@ -3,8 +3,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    color: #333; /* Основной цвет текста */
     background-color: #fff; /* Белый фон */
+    color: #333;
 }
 
 /* Центрирование заголовка */
@@ -40,4 +40,18 @@ h1 {
     top: 0;
     font-weight: bold;
     color: #000; /* Цвет точки */
+}
+
+/* Стили для блока под вторым фото */
+.under-photo {
+    margin: 20px;
+    text-align: left;
+    font-size: 18px;
+}
+
+/* Стили для изображений */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
