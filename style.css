@@ -52,7 +52,8 @@ li {
 .dotted-list {
     list-style-type: none; /* Убираем стандартные маркеры */
     padding-left: 0;
-    text-align: center; /* Центрируем весь список */
+    text-align: left; /* Сдвигаем точки влево */
+    margin-left: 30px; /* Отступ слева для точек */
 }
 
 .dotted-list li {
@@ -75,9 +76,10 @@ li {
 /* Стили для второго фото с текстом */
 .second-photo {
     display: flex;
-    justify-content: left;
+    justify-content: flex-start; /* Выравниваем влево */
     align-items: center;
     margin-top: 20px;
+    margin-left: 20px; /* Немного отступаем от края */
 }
 
 .second-photo img {
