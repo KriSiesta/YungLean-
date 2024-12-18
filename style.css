@@ -39,7 +39,8 @@ img {
 /* Стили для списка */
 ul {
     padding-left: 0;
-    text-align: center; /* Центрируем весь список */
+    text-align: left; /* Сдвигаем список влево */
+    margin-left: 30px; /* Отступ слева для точек */
 }
 
 /* Стили для списка */
@@ -52,8 +53,6 @@ li {
 .dotted-list {
     list-style-type: none; /* Убираем стандартные маркеры */
     padding-left: 0;
-    text-align: left; /* Сдвигаем точки влево */
-    margin-left: 30px; /* Отступ слева для точек */
 }
 
 .dotted-list li {
