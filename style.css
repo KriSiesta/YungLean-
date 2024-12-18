@@ -1,94 +1,85 @@
-/* Сброс стилей по умолчанию */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Основные стили для страницы */
+/* Общие стили */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f8ff;  /* Цвет фона страницы */
-    color: #333;
-    line-height: 1.6;
-    padding: 20px;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center; /* Выравнивание заголовков по центру */
 }
 
-/* Стиль для текста заголовков и абзацев */
-h1, h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
+/* Стили для заголовка */
 h1 {
-    text-align: center;
-    font-size: 2.5em;
+    font-size: 36px; /* Увеличенный размер для заголовка */
+    margin-top: 20px; /* Отступ сверху */
 }
 
-h2 {
+/* Стили для выравнивания изображения по центру */
+.centered {
     text-align: center;
-    margin-bottom: 15px;
 }
 
-/* Стили для текста */
-p {
-    font-size: 1.2em;
-    margin-bottom: 15px;
-    text-align: center;
+/* Стили для изображения */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto; /* Центрируем изображение */
+}
+
+/* Стили для текста, который будет выровнен влево и увеличен */
+.left-text {
+    text-align: left;
+    font-size: 18px; /* Увеличен размер шрифта */
+    margin-left: 20px; /* Отступ слева */
+    margin-right: 20px; /* Отступ справа для удобства */
+    line-height: 1.6; /* Межстрочный интервал */
 }
 
 /* Стили для списка */
 ul {
-    list-style-type: none;
     padding-left: 0;
-    text-align: center;
 }
 
-ul li {
-    font-size: 1.2em;
-    margin: 5px 0;
+/* Стили для списка с точками */
+.dotted-list {
+    list-style-type: none; /* Убираем стандартные маркеры */
+    padding-left: 0;
+    text-align: left; /* Точки с левого края */
 }
 
-/* Стиль для первого изображения */
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
+.dotted-list li {
+    position: relative;
+    padding-left: 25px; /* Создаем отступ для точек */
+    font-size: 18px;
+    line-height: 1.5;
 }
 
-/* Контейнер для второго фото и текста */
-div[style="display: flex; justify-content: left; align-items: center; margin-top: 20px;"] {
+.dotted-list li::before {
+    content: '•'; /* Символ точки */
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-weight: bold;
+    font-size: 18px;
+    color: black; /* Цвет точки */
+}
+
+/* Стили для второго фото с текстом рядом, выравнивание слева */
+.second-photo {
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-start; /* Текст и фото слева */
     align-items: center;
     margin-top: 20px;
+    text-align: left; /* Текст слева */
 }
 
-/* Стиль для второго фото */
-div[style="display: flex; justify-content: left; align-items: center; margin-top: 20px;"] img {
-    width: 300px;
-    margin-right: 20px;
+.second-photo img {
+    width: 300px; /* Ограничиваем размер фото */
+    margin-right: 20px; /* Отступ справа от фото */
 }
 
-/* Стиль для текста рядом с фотографией */
-div[style="display: flex; justify-content: left; align-items: center; margin-top: 20px;"] div {
-    font-size: 1.2em;
-    text-align: left;
-}
-
-/* Дополнительный блок с треками */
-div[style="text-align: left; margin-top: 20px; margin-left: 20px;"] {
-    text-align: left;
-    margin-top: 20px;
-    margin-left: 20px;
-}
-
-div[style="text-align: left; margin-top: 20px; margin-left: 20px;"] ul {
-    padding-left: 20px;
-}
-
-div[style="text-align: left; margin-top: 20px; margin-left: 20px;"] ul li {
-    font-size: 1.2em;
-    margin: 5px 0;
+/* Стили для текста под вторым фото */
+.photo-text {
+    max-width: 600px; /* Ограничиваем ширину блока с текстом */
 }
