@@ -3,25 +3,59 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: lightcyan; /* Светло-циановый фон */
+    background-color: #f4f4f4;
     color: #333;
 }
 
-/* Центрирование заголовка */
+/* Стили для заголовков */
 h1 {
     text-align: center;
-    margin-top: 20px;
-    color: #000;
+    margin: 20px 0;
 }
 
-/* Стили для текстов слева */
+h2 {
+    text-align: center;
+}
+
+/* Центрирование блоков */
+.centered {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Текст слева */
 .left-text {
-    margin: 20px;
     text-align: left;
+    margin: 20px;
     font-size: 18px;
+    line-height: 1.5;
 }
 
-/* Стили для списков с точками */
+/* Flex-контейнер для второго фото и текста */
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin: 20px;
+}
+
+.flex-container img {
+    width: 300px;
+    margin-right: 20px;
+}
+
+.text-beside-photo p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Секция с треками */
+.tracks-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
 .dotted-list {
     list-style-type: none; /* Убираем стандартные маркеры */
     padding-left: 0;
@@ -29,8 +63,9 @@ h1 {
 
 .dotted-list li {
     position: relative;
-    padding-left: 20px; /* Отступ для точки */
-    line-height: 1.6;
+    padding-left: 20px; /* Отступ для точек */
+    font-size: 18px;
+    line-height: 1.5;
 }
 
 .dotted-list li::before {
@@ -39,5 +74,6 @@ h1 {
     left: 0;
     top: 0;
     font-weight: bold;
-    color: #000; /* Цвет точки */
+    font-size: 18px;
+    color: black;
 }
