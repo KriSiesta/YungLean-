@@ -4,53 +4,66 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    text-align: center; /* Выравнивание заголовков по центру */
+    color: #333;
 }
 
-/* Стили для заголовка */
+/* Стили для заголовков */
 h1 {
-    font-size: 36px; /* Увеличенный размер для заголовка */
-    margin-top: 20px; /* Отступ сверху */
+    text-align: center;
+    margin: 20px 0;
 }
 
-/* Стили для выравнивания изображения по центру */
-.centered {
+h2 {
     text-align: center;
 }
 
-/* Стили для изображения */
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto; /* Центрируем изображение */
+/* Центрирование блоков */
+.centered {
+    text-align: center;
+    margin: 20px 0;
 }
 
-/* Стили для текста, который будет выровнен влево и увеличен */
+/* Текст слева */
 .left-text {
     text-align: left;
-    font-size: 18px; /* Увеличен размер шрифта */
-    margin-left: 20px; /* Отступ слева */
-    margin-right: 20px; /* Отступ справа для удобства */
-    line-height: 1.6; /* Межстрочный интервал */
+    margin: 20px;
+    font-size: 18px;
+    line-height: 1.5;
 }
 
-/* Стили для списка */
-ul {
-    padding-left: 0;
+/* Flex-контейнер для второго фото и текста */
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin: 20px;
 }
 
-/* Стили для списка с точками */
+.flex-container img {
+    width: 300px;
+    margin-right: 20px;
+}
+
+.text-beside-photo p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Секция с треками */
+.tracks-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
 .dotted-list {
     list-style-type: none; /* Убираем стандартные маркеры */
     padding-left: 0;
-    text-align: left; /* Точки с левого края */
 }
 
 .dotted-list li {
     position: relative;
-    padding-left: 25px; /* Создаем отступ для точек */
+    padding-left: 20px; /* Отступ для точек */
     font-size: 18px;
     line-height: 1.5;
 }
@@ -62,24 +75,5 @@ ul {
     top: 0;
     font-weight: bold;
     font-size: 18px;
-    color: black; /* Цвет точки */
-}
-
-/* Стили для второго фото с текстом рядом, выравнивание слева */
-.second-photo {
-    display: flex;
-    justify-content: flex-start; /* Текст и фото слева */
-    align-items: center;
-    margin-top: 20px;
-    text-align: left; /* Текст слева */
-}
-
-.second-photo img {
-    width: 300px; /* Ограничиваем размер фото */
-    margin-right: 20px; /* Отступ справа от фото */
-}
-
-/* Стили для текста под вторым фото */
-.photo-text {
-    max-width: 600px; /* Ограничиваем ширину блока с текстом */
+    color: black;
 }
